@@ -3,7 +3,7 @@ Kafka in Docker
 
 This repository provides everything you need to run Kafka in Docker.
 
-**Updated for Kafka 0.10.1.0.**
+**Updated for Kafka 0.10.2.0.**
 
 Why?
 ---
@@ -20,7 +20,7 @@ Run
 Start the container:
 
 ```bash
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 mkasberg/kafka:0.10.1.0
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 mkasberg/kafka:0.10.2.0
 ```
 
 Write a test message to kafka:
