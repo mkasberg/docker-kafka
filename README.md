@@ -20,7 +20,7 @@ Run
 Start the container:
 
 ```bash
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 mkasberg/kafka:0.10.2.0
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 spotx/kafka:0.10.2.0
 ```
 
 Write a test message to kafka:
@@ -37,7 +37,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --t
 
 In the box
 ---
-* **mkasberg/kafka**
+* **spotx/kafka**
 
   The docker image with both Kafka and Zookeeper. Built from the `kafka`
   directory.
@@ -45,12 +45,12 @@ In the box
 Public Builds
 ---
 
-https://hub.docker.com/r/mkasberg/kafka/
+https://hub.docker.com/r/spotx/kafka/
 
 Build from Source
 ---
 
-    docker build -t mkasberg/kafka kafka/
+    docker build -t spotx/kafka kafka/
 
 Todo
 ---
